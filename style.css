@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgb(49, 49, 49);
     font-family: "MS 明朝", serif;
     color: white;
     /* text-align: center; */
@@ -248,7 +248,7 @@ header {
   font-size: 20px;
   color: white;
   z-index: 100000;
-  background-color: rgba(0, 0, 0, 0.5);
+
 }
 
 .logo-icon{
@@ -330,7 +330,7 @@ header {
 }
 
 .footer {
-  background-color: #414141;
+  background-color: black;
   width: 100%;
   text-align: left;
   font-family: sans-serif;
@@ -338,6 +338,7 @@ header {
   font-size: 16px;
   padding: 50px;
   margin-top: 50px;
+  font-family:  "MS 明朝", serif;
 }
 
 .footer .footer-left,
