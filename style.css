@@ -558,7 +558,7 @@ header {
 background: linear-gradient(white,white) 0 100%/0 5px no-repeat;
 /*左から、カラー（始点と終点それぞれ同じものを指定）、position / サイズ横縦 繰り返しの有無 */
 
-transition: background 3s;
+transition: background 1s;
 /*トランジションの設定。下線を引く動きをアニメーションにするのに必要 */
 
 text-decoration: none;
