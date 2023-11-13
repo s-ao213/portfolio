@@ -22,6 +22,7 @@ main {
     width: 300px;
   padding: 5px;
   border-radius:50%;
+  background-color: rgb(49, 49, 49, 50);
 }
 
 .icon2{
@@ -537,4 +538,39 @@ header {
     top: 24px;
     border-radius: 100%;
   }
+}
+
+.underline-Area {
+  width: 50%;
+  min-width: 200px;
+  height: auto;
+  margin: 0;
+  padding: 20px;
+  border: 10px solid white;
+}
+
+.underline-Area p {
+  margin: 60px auto;
+}
+
+.underline-before {
+
+background: linear-gradient(white,white) 0 100%/0 5px no-repeat;
+/*左から、カラー（始点と終点それぞれ同じものを指定）、position / サイズ横縦 繰り返しの有無 */
+
+transition: background 3s;
+/*トランジションの設定。下線を引く動きをアニメーションにするのに必要 */
+
+text-decoration: none;
+/*テキストの装飾の設定 */
+}
+
+.underline-after {
+background-size: 100% 5px;
+/* 変化後のスタイル。横サイズを0から100%に変えることで指定の文字列に下線を引く */
+}
+
+h2 {
+  font-weight: 1000;
+  font-size: 50px;
 }
