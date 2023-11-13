@@ -2,8 +2,13 @@ body {
     background-color: black;
     font-family: "MS 明朝", serif;
     color: white;
-    text-align: center;
+    /* text-align: center; */
     font-feature-settings: "palt";
+}
+
+main {
+  margin-left: 20%;
+  margin-right: 20%;
 }
 .headerr {
     font-size: 36px;
@@ -119,7 +124,6 @@ a:active{
     display: block;
     overflow: hidden;
 
-    margin: 150px;
     padding: 0;
 }
 .slick-list:focus
@@ -491,4 +495,45 @@ header {
 
 .discode{
   border-radius: 50%; 
+}
+
+.melu {
+  color: #0099ff;
+}
+
+.timeline {
+  list-style: none;
+}
+.timeline > li {
+  margin-bottom: 60px;
+}
+
+/* for Desktop */
+@media ( min-width : 640px ){
+  .timeline > li {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+  }
+  .timeline-date {
+    width: 110px;
+    float: left;
+    margin-top: 20px;
+  }
+  .timeline-content {
+    width: 75%;
+    float: left;
+    border-left: 3px white solid;
+    padding-left: 30px;
+  }
+  .timeline-content:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: yellow;
+    position: absolute;
+    left: 106px;
+    top: 24px;
+    border-radius: 100%;
+  }
 }
