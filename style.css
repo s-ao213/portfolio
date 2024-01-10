@@ -701,12 +701,16 @@ h2 {
   }
 
   /* スライド移動ボタンエリア */
-.move_controler {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  margin-bottom: 150px;
-  text-align: center;
+  .move_controler {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    margin-bottom: 150px;
+    text-align: center;
+    }
+
+  #title1 {
+    font-size: 30px;
   }
 }
 
@@ -719,6 +723,10 @@ h2 {
 
   #logo2 {
     display: none;
+  }
+
+  #title1 {
+    font-size: 30px;
   }
 
   .icon {
@@ -763,6 +771,10 @@ h2 {
     display: none;
   }
 
+  #title1 {
+    font-size: 40px;
+  }
+
   #sample_pictures{
     width: 500px;
     height: 400px;
@@ -794,6 +806,10 @@ h2 {
 
   #logo2 {
     display: inline;
+  }
+  
+  #title1{
+    display: none;
   }
 
   #sample_pictures{
@@ -828,6 +844,10 @@ h2 {
 
   #logo2 {
     display: inline;
+  }
+
+  #title1{
+    display: none;
   }
 
   #sample_pictures{
