@@ -630,6 +630,7 @@ h2 {
   opacity: 0.5;
   /* スライドより前面にする */
   z-index: 2;
+  text-align: ce;
 }
 /* ホバー時はやや明るくする */
 .button_move:hover {
@@ -711,12 +712,27 @@ h2 {
     margin-left: 10%;
     margin-right: 10%;
   }
+
   .icon {
     width: 275px;
     height: 275px;
     padding: 5px;
     border-radius:50%;
     background-color: rgb(49, 49, 49, 50);
+  }
+  
+  #sample_pictures{
+    width: 400px;
+    height: 320px;
+  }
+
+  /* スライド移動ボタンエリア */
+.move_controler {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  margin-bottom: 70px;
+  margin-left: 160px;
   }
 }
 
@@ -726,12 +742,26 @@ h2 {
     margin-left: 10%;
     margin-right: 5%;
   }
+
   .icon {
     width: 300px;
     height: 300px;
     padding: 5px;
     border-radius:50%;
     background-color: rgb(49, 49, 49, 50);  
+  }
+
+  #sample_pictures{
+    width: 500px;
+    height: 400px;
+  }
+
+  /* スライド移動ボタンエリア */
+.move_controler {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  margin-left: 200px;
   }
 }
 
@@ -761,7 +791,7 @@ h2 {
   bottom: 20px;
   width: 100%;
   text-align: center;
-}
+  }
 }
 
 
@@ -779,4 +809,18 @@ h2 {
     border-radius:50%;
     background-color: rgb(49, 49, 49, 50);
   }
+
+  #sample_pictures{
+    width: 500px;
+    height: 400px;
+  }
+
+  /* スライド移動ボタンエリア */
+.move_controler {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  }
+
 }
