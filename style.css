@@ -690,3 +690,12 @@ h2 {
   .button_move:nth-of-type(4) {
   opacity: 1;
 }
+
+.slide_select:nth-of-type(5):checked ~ .slide:nth-of-type(5) {
+  opacity: 1;
+}
+.slide_select:nth-of-type(5):checked
+  ~ .move_controler
+  .button_move:nth-of-type() {
+  opacity: 1;
+}
