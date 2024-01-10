@@ -691,6 +691,10 @@ h2 {
     background-color: rgb(49, 49, 49, 50);
   }
 
+  #logo2 {
+    display: none;
+  }
+
   #sample_pictures{
     width: 300x;
     height: 240px;
@@ -711,6 +715,10 @@ h2 {
   main {
     margin-left: 10%;
     margin-right: 10%;
+  }
+
+  #logo2 {
+    display: none;
   }
 
   .icon {
@@ -751,6 +759,10 @@ h2 {
     background-color: rgb(49, 49, 49, 50);  
   }
 
+  #logo2 {
+    display: none;
+  }
+
   #sample_pictures{
     width: 500px;
     height: 400px;
@@ -778,6 +790,10 @@ h2 {
     padding: 5px;
     border-radius:50%;
     background-color: rgb(49, 49, 49, 50);
+  }
+
+  #logo2 {
+    display: inline;
   }
 
   #sample_pictures{
@@ -808,6 +824,10 @@ h2 {
     padding: 5px;
     border-radius:50%;
     background-color: rgb(49, 49, 49, 50);
+  }
+
+  #logo2 {
+    display: inline;
   }
 
   #sample_pictures{
