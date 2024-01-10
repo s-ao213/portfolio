@@ -535,8 +535,8 @@ header {
 background: linear-gradient(white,white) 0 100%/0 5px no-repeat;
 /*左から、カラー（始点と終点それぞれ同じものを指定）、position / サイズ横縦 繰り返しの有無 */
 
-transition: background 1s;
-/*トランジションの設定。下線を引く動きをアニメーションにするのに必要 */
+transition: 1s;
+/* トランジションの設定。下線を引く動きをアニメーションにするのに必要 */
 
 text-decoration: none;
 /*テキストの装飾の設定 */
@@ -577,8 +577,6 @@ h2 {
 .slide {
   /* サイズは自由に変更してください。*/
   /* 上の.containsも同じサイズにしてください。 */
-  width: 500px;
-  height: 400px;
   position: absolute;
   /* スライドの初期値は選択されていないので透明にしておく */
   opacity: 0;
@@ -602,6 +600,7 @@ h2 {
   /* スライドよりも前面にする */
   z-index: 3;
 }
+
 /* ホバー時にボタンを強調 */
 .scroll_button:hover {
   opacity: 1;
@@ -618,13 +617,7 @@ h2 {
   /* 上辺と右辺の枠線を回転して"＞"にする */
   transform: rotate(45deg);
 }
-/* スライド移動ボタンエリア */
-.move_controler {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
-}
+
 /* スライド移動の各ボタン */
 .button_move {
   display: inline-block;
@@ -688,7 +681,7 @@ h2 {
 }
 
 /* スマートフォン縦 (0-480px) */
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 400px){
   .icon {
     width: 225px;
     height: 225px;
@@ -696,20 +689,84 @@ h2 {
     border-radius:50%;
     background-color: rgb(49, 49, 49, 50);
   }
+
+  #sample_pictures{
+    width: 300x;
+    height: 240px;
+  }
+
+  /* スライド移動ボタンエリア */
+.move_controler {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  margin-bottom: 150px;
+  text-align: center;
+  }
 }
 
 /* スマートフォン横 (480-600px) */
-@media only screen and (min-width: 481px) and (max-width: 600px) {
-
+@media only screen and (min-width: 400px) and (max-width: 670px) {
+  main {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .icon {
+    width: 275px;
+    height: 275px;
+    padding: 5px;
+    border-radius:50%;
+    background-color: rgb(49, 49, 49, 50);
+  }
 }
 
 /* タブレット (600-960px) */
-@media only screen and (min-width: 601px) and (max-width: 960px){
-
+@media only screen and (min-width: 671px) and (max-width: 960px){
+  main {
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+  .icon {
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    border-radius:50%;
+    background-color: rgb(49, 49, 49, 50);  
+  }
 }
 
 /* ノートPC (960-1280px) */
 @media only screen and (min-width: 961px) and (max-width: 1280px) {
+  main {
+    margin-left: 20%;
+    margin-right: 15%;
+  }
+
+  .icon {
+    width: 400px;
+    height: 400px;
+    padding: 5px;
+    border-radius:50%;
+    background-color: rgb(49, 49, 49, 50);
+  }
+
+  #sample_pictures{
+    width: 500px;
+    height: 400px;
+  }
+
+  /* スライド移動ボタンエリア */
+.move_controler {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+}
+
+
+/* モニター等 (1280px以上) */
+@media only screen and (min-width: 1281px) {
   main {
     margin-left: 20%;
     margin-right: 20%;
@@ -722,10 +779,4 @@ h2 {
     border-radius:50%;
     background-color: rgb(49, 49, 49, 50);
   }
-}
-
-
-/* モニター等 (1280px以上) */
-@media only screen and (min-width: 1281px) {
-
 }
