@@ -517,6 +517,36 @@ header {
   }
 }
 
+/* 480ピクセル用 */
+@media (max-width: 639px) {
+  .timeline > li {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+  }
+  .timeline-date {
+    width: 90px; /* 幅を調整 */
+    float: left;
+    margin-top: 10px; /* マージンを調整 */
+  }
+  .timeline-content {
+    width: calc(100% - 90px); /* 日付後の幅に合わせて調整 */
+    float: left;
+    border-left: 3px white solid;
+    padding-left: 20px; /* パディングを調整 */
+  }
+  .timeline-content:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: yellow;
+    position: absolute;
+    left: 86px; /* 日付と揃えるために位置を調整 */
+    top: 14px; /* 垂直方向に合わせるために位置を調整 */
+    border-radius: 100%;
+  }
+}
+
 .underline-Area {
   width: 50%;
   min-width: 200px;
@@ -714,7 +744,7 @@ h2 {
   }
 }
 
-/* スマートフォン横 (480-600px) */
+/* スマートフォン横 (480-670px) */
 @media only screen and (min-width: 400px) and (max-width: 670px) {
   main {
     margin-left: 10%;
@@ -752,7 +782,7 @@ h2 {
   }
 }
 
-/* タブレット (600-960px) */
+/* タブレット (670-960px) */
 @media only screen and (min-width: 671px) and (max-width: 960px){
   main {
     margin-left: 10%;
