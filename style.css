@@ -556,20 +556,19 @@ header {
 }
 
 .underline-before {
+    background: linear-gradient(white,white) 0 100%/0 5px no-repeat;
+  /*左から、カラー（始点と終点それぞれ同じものを指定）、position / サイズ横縦 繰り返しの有無 */
 
-background: linear-gradient(white,white) 0 100%/0 5px no-repeat;
-/*左から、カラー（始点と終点それぞれ同じものを指定）、position / サイズ横縦 繰り返しの有無 */
+  transition: 1s;
+  /* トランジションの設定。下線を引く動きをアニメーションにするのに必要 */
 
-transition: 1s;
-/* トランジションの設定。下線を引く動きをアニメーションにするのに必要 */
-
-text-decoration: none;
-/*テキストの装飾の設定 */
+  text-decoration: none;
+  /*テキストの装飾の設定 */
 }
 
 .underline-after {
-background-size: 100% 5px;
-/* 変化後のスタイル。横サイズを0から100%に変えることで指定の文字列に下線を引く */
+  background-size: 100% 5px;
+  /* 変化後のスタイル。横サイズを0から100%に変えることで指定の文字列に下線を引く */
 }
 
 h2 {
