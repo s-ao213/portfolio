@@ -7,6 +7,7 @@
     <script src="script.js"></script>
     <a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     
     <!-- ヘッダーの設定 -->
     <header>
@@ -91,95 +92,149 @@
     
         <div class="section">
             <h2 id="skill"><span class="underline-before">skill</span></h2>
-            <div class="section1">
-                <h3>C++</h3>
-                <p>クラブ活動で使用している程度です。</p>
-            </div>
-            <div class="section1">
-                <h3>python</h3>
-                <p>ちょっとしたゲームを作成できます。</p>
-            </div>
-            <div class="section1">
-                <h3>HTML&CSS</h3>
-                <p>このWebページを作成するくらいの技量です。</p>
-            </div>
-            <div class="section1">
-                <h3>C#/Unity</h3>
-                <p>趣味や学校の課外活動でUnityを利用して、ゲーム作りをしています。</p>
-            </div>
-            <div class="section1">
-                <h3>javascript</h3>
-                <p>Webサイトを作るときに利用する程度です。</p>
-            </div>
-            <div class="section1">
-                <h3>Arduino/ArduinoIDE</h3>
-                <p>回路を組んで簡単なプログラムを作成できます。</p>
-            </div>
-            <div class="section1">
-                <h3>Scratch</h3>
-                <p>簡単なリンゴを使ったけーむを作成しました。</p>
-            </div>
-            <div class="section1">
-                <h3>Deeds-DCS</h3>
-                <p>論理回路の授業で使用する程度です。</p>
-            </div>
-            <div class="section1">
-                <h3>MakeCode for micro:bit</h3>
-                <p></p>
-            </div>
-            <div class="section1">
-                <h3>Tinker CAD</h3>
-                <p></p>
-            </div>
-            <div class="section1">
-                <h3>WSL(Windows Subsystem for Linux)</h3>
-                <p></p>
-            </div>
-            <div class="section1">
-                <h3>Docker</h3>
-                <p></p>
-            </div>
-            <div class="section1">
-                <h3>Cisco</h3>
-                <p></p>
-            </div>
-            <div class="section1">
-                <h3>Tera Term</h3>
-                <p></p>
-            </div>
-            <div class="section1">
-                <h3>Wire shark</h3>
-                <p></p>
-            </div>
-            <div class="section1">
-                <h3>github</h3>
-                <p></p>
-            </div>
-            <!-- <div class="section1">
-                <h3></h3>
-                <p></p>
-            </div> -->
-            <p>…etc</p>
-            <ul class="slider">
-                <li><img src="C++のロゴ.png" alt="C++" width="90px"></li>
-                <li><img src="Pythonのロゴ.png" alt="python" width="100px"></li>
-                <li><img src="HTMLのロゴ.png" alt="html" width="100px"></li>
-                <li><img style="border-radius: 50%;" src="Unityのロゴ.webp" alt="Unity" width="120px"></li>
-                <li><img src="JSのロゴ.png" alt="JS" width="110px"></li>
-                <li><img src="GitHubのロゴ.png" alt="github" width="100px"></li>
-                <li><img src="dockerのロゴ.png" alt="Docker" width="120px"></li>
-                <li><img src="ciscoのロゴ.png" alt="Cisco" width="140px"></li>
-                <li><img style="border-radius: 50%;" src="TeraTermのロゴ.jpg" alt="TeraTerm" width="120px"></li>
-                <li><img src="wiresharkのロゴ.png" alt="Wireshark" width="100px"></li>
-                <li><img src="microbitのアイコン.png" alt="microbit" width="100px"></li>
-                <!-- <li><img src="" alt="" width="100px"></li> -->
-            </ul> 
-        </div>
+            <p>クリックしていただくと詳しい説明がでてきます。</p>
+            <div class="popup-grid">
+                <!-- HTML -->
+                <div class="popup-wrapper">
+                    <input id="open-html" type="checkbox">
+                    <label for="open-html" class="open-btn">HTML</label>
+                    <label for="open-html" class="overlay"></label>
+                    <div class="popup-content">
+                        <label for="open-html" class="close-btn"><i class="fas fa-times-circle"></i></label>
+                        <div id="popup-text">
+                            <div class="popup-image">
+                            <img src="HTMLのロゴ.png" alt="HTMLのロゴ">
+                            </div>
+                            <div class="popup-description">
+                                <h3>ポップアップのタイトル</h3>
+                                <p>ここにポップアップの内容が表示されます。任意のテキストを追加できます。このテキストは横書きになります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- 画像を動かすためのscript -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-8/js/6-1-8.js"></script>
+                <!-- C++ -->
+                <div class="popup-wrapper">
+                    <input id="open-cpp" type="checkbox">
+                    <label for="open-cpp" class="open-btn">C++</label>
+                    <label for="open-cpp" class="overlay"></label>
+                    <div class="popup-content">
+                        <label for="open-cpp" class="close-btn"><i class="fas fa-times-circle"></i></label>
+                        <div id="popup-text">
+                            <div class="popup-image">
+                            <img src="C++のロゴ.png" alt="C++のロゴ">
+                            </div>
+                            <div class="popup-description">
+                                <h5>ポップアップのタイトル</h5>
+                                <p>ここにポップアップの内容が表示されます。任意のテキストを追加できます。このテキストは横書きになります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Python -->
+                <div class="popup-wrapper">
+                    <input id="open-python" type="checkbox">
+                    <label for="open-python" class="open-btn">Python</label>
+                    <label for="open-python" class="overlay"></label>
+                
+                    <div class="popup-content">
+                        <label for="open-python" class="close-btn"><i class="fas fa-times-circle"></i></label>
+                        <div id="popup-text">
+                            <div class="popup-image">
+                            <img src="Pythonのロゴ.png" alt="Pythonのロゴ">
+                            </div>
+                            <div class="popup-description">
+                                <h5>ポップアップのタイトル</h5>
+                                <p>ここにポップアップの内容が表示されます。任意のテキストを追加できます。このテキストは横書きになります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JS -->
+                <div class="popup-wrapper">
+                    <input id="open-javascript" type="checkbox">
+                    <label for="open-javascript" class="open-btn">javascript</label>
+                    <label for="open-javascript" class="overlay"></label>
+                
+                    <div class="popup-content">
+                        <label for="open-javascript" class="close-btn"><i class="fas fa-times-circle"></i></label>
+                        <div id="popup-text">
+                            <div class="popup-image">
+                            <img src="JSのロゴ.png" alt="JSのロゴ">
+                            </div>
+                            <div class="popup-description">
+                                <h5>ポップアップのタイトル</h5>
+                                <p>ここにポップアップの内容が表示されます。任意のテキストを追加できます。このテキストは横書きになります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unity -->
+                <div class="popup-wrapper">
+                    <input id="open-unity" type="checkbox">
+                    <label for="open-unity" class="open-btn">Unity</label>
+                    <label for="open-unity" class="overlay"></label>
+                
+                    <div class="popup-content">
+                        <label for="open-unity" class="close-btn"><i class="fas fa-times-circle"></i></label>
+                        <div id="popup-text">
+                            <div class="popup-image">
+                            <img src="Unityのロゴ.webp" alt="Unityのロゴ">
+                            </div>
+                            <div class="popup-description">
+                                <h5>ポップアップのタイトル</h5>
+                                <p>ここにポップアップの内容が表示されます。任意のテキストを追加できます。このテキストは横書きになります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- マイクロビット -->
+                <div class="popup-wrapper">
+                    <input id="open-microbit" type="checkbox">
+                    <label for="open-microbit" class="open-btn">micro bit</label>
+                    <label for="open-microbit" class="overlay"></label>
+                
+                    <div class="popup-content">
+                        <label for="open-microbit" class="close-btn"><i class="fas fa-times-circle"></i></label>
+                        <div id="popup-text">
+                            <div class="popup-image">
+                            <img src="microbitのアイコン.png" alt="microbitのアイコン">
+                            </div>
+                            <div class="popup-description">
+                                <h5>ポップアップのタイトル</h5>
+                                <p>ここにポップアップの内容が表示されます。任意のテキストを追加できます。このテキストは横書きになります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tera Term -->
+                <div class="popup-wrapper">
+                    <input id="open-teraterm" type="checkbox">
+                    <label for="open-teraterm" class="open-btn">Tera Term</label>
+                    <label for="open-teraterm" class="overlay"></label>
+                
+                    <div class="popup-content">
+                        <label for="open-teraterm" class="close-btn"><i class="fas fa-times-circle"></i></label>
+                        <div id="popup-text">
+                            <div class="popup-image">
+                            <img src="TeraTermのロゴ.jpg" alt="TeraTermのロゴ">
+                            </div>
+                            <div class="popup-description">
+                                <h5>ポップアップのタイトル</h5>
+                                <p>ここにポップアップの内容が表示されます。任意のテキストを追加できます。このテキストは横書きになります。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        
         <div class="section">
             <h2 id="product"><span class="underline-before">product</span></h2>
 

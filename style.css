@@ -572,6 +572,139 @@ h2 {
   opacity: 1;
 }
 
+.popup-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3列のグリッド */
+  grid-gap: 5px; /* グリッドアイテム間のスペース */
+  padding: 1px; /* グリッドのパディング */
+}
+
+/* スキル紹介の画像挿入 */
+.popup-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* ポップアップの幅 */
+  max-width: 800px; /* ポップアップの最大幅 */
+  height: auto; /* ポップアップの高さを内容に合わせる */
+  background-color:#fff;
+  border: 5px solid #00bcd4;
+  z-index: 9999;
+  box-sizing: border-box; /* パディングを含めたサイズ計算 */
+  overflow: auto; /* 内容がオーバーフローしたらスクロールバーを表示 */
+  visibility: hidden;
+  opacity : 0;
+  transition: .1s;
+}
+
+#popup-text {
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: start; /* 画像とテキストの間隔を調整 */
+  padding: 20px; /* ポップアップ内の余白 */
+}
+
+.popup-image {
+  flex-shrink: 0; /* 画像が縮小防止 */
+  margin-right: 20px; /* 画像とテキストの間の余白*/
+}
+
+.popup-description {
+  flex-grow: 1; /* テキスト部分が余ったスペースを埋めるように伸びる */
+}
+
+.popup-image img {
+  width: 100px;  /* 画像の幅を100ピクセルに設定 */
+  height: auto;  /* 画像の高さを自動調整（アスペクト比を維持） */
+}
+
+.open-btn:last-child {
+  margin-right: 0; /* 最後の要素の右側のマージンを0に設定 */
+}
+
+#open:checked ~ .popup-content{
+  visibility: visible;
+  opacity : 1;
+  transition: .3s;
+}
+
+#open-html:checked ~ .popup-content,
+#open-cpp:checked ~ .popup-content,
+#open-python:checked ~ .popup-content,
+#open-javascript:checked ~ .popup-content,
+#open-unity:checked ~ .popup-content,
+#open-microbit:checked ~ .popup-content,
+#open-teraterm:checked ~ .popup-content {
+  visibility: visible;
+  opacity: 1;
+  transition: .3s;
+}
+
+#open-html:checked ~ .overlay,
+#open-cpp:checked ~ .overlay,
+#open-python:checked ~ .overlay,
+#open-javascript:checked ~ .overlay,
+#open-unity:checked ~ .overlay,
+#open-microbit:checked ~ .overlay,
+#open-teraterm:checked ~ .overlay {
+  background: rgb(51, 51, 51,.8);
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: .3s;
+  z-index: 9999;
+}
+
+.open-btn {
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin: 10px 1px;
+  text-align: center;
+  background-color: #383c3c;
+  color: aliceblue;
+  padding: 10px 12px;
+  border: 3px solid #00bcd4;
+}
+
+/* バツ印 */
+label.close-btn {
+  position: fixed; /* ビューポートに対して固定 */
+  top: 10px; /* 上からの距離 */
+  right: 10px; /* 右からの距離 */
+  background: #00bcd4;
+  color: #383c3c;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 26px;
+  cursor: pointer;
+  z-index: 10000; /* .popup-contentよりも上に表示 */
+}
+
+
+./* バツ印のスタイルを調整 */
+.fa-times-circle {
+  font-size: 1.9em;
+  color: #00bcd4;
+}
+
+@media (orientation: landscape){
+  .popup-content{
+      width: 55%;
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
 /* スマートフォン縦 (0-480px) */
 @media only screen and (max-width: 400px){
   .icon {
