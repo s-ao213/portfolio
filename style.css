@@ -572,13 +572,6 @@ h2 {
   opacity: 1;
 }
 
-.popup-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 3列のグリッド */
-  grid-gap: 5px; /* グリッドアイテム間のスペース */
-  padding: 1px; /* グリッドのパディング */
-}
-
 /* スキル紹介の画像挿入 */
 .popup-content {
   position: fixed;
@@ -613,6 +606,12 @@ h2 {
 
 .popup-description {
   flex-grow: 1; /* テキスト部分が余ったスペースを埋めるように伸びる */
+}
+
+.popup-grid {
+  display: grid;
+  grid-gap: 5px; /* グリッドアイテム間のスペース */
+  padding: 1px; /* グリッドのパディング */
 }
 
 .popup-image img {
@@ -736,6 +735,10 @@ input[type="checkbox"] {
   #title1 {
     font-size: 30px;
   }
+
+  .popup-grid {
+    grid-template-columns: repeat(2, 1fr); /* 3列のグリッド */
+  }
 }
 
 /* スマートフォン横 (480-670px) */
@@ -774,6 +777,10 @@ input[type="checkbox"] {
   margin-bottom: 70px;
   margin-left: 160px;
   }
+
+  .popup-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3列のグリッド */
+  }
 }
 
 /* タブレット (670-960px) */
@@ -811,6 +818,10 @@ input[type="checkbox"] {
   width: 100%;
   margin-left: 200px;
   }
+
+  .popup-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3列のグリッド */
+  }
 }
 
 /* ノートPC (960-1280px) */
@@ -842,11 +853,15 @@ input[type="checkbox"] {
   }
 
   /* スライド移動ボタンエリア */
-.move_controler {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
+  .move_controler {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    }
+
+  .popup-grid {
+    grid-template-columns: repeat(4, 1fr); /* 3列のグリッド */
   }
 }
 
@@ -885,5 +900,9 @@ input[type="checkbox"] {
   bottom: 20px;
   width: 100%;
   text-align: center;
+  }
+
+  .popup-grid {
+    grid-template-columns: repeat(5, 1fr); /* 3列のグリッド */
   }
 }
