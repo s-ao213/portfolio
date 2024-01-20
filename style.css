@@ -1,7 +1,7 @@
 body {
-  background-color:#2C3333;
+  background-color:#161A30;
   font-family: "MS 明朝", serif;
-  color: #CBE4DE;
+  color: #F0ECE5;
   font-feature-settings: "palt";
 }
 
@@ -15,7 +15,7 @@ html {
 }
 
 a{
-  color: #2C3333;
+  color: #31304D;
 }
 
 /* pagetopに戻るボタン */
@@ -25,14 +25,14 @@ a{
   position: fixed;
   right: 30px;
   bottom: 30px;
-  background: #CBE4DE;
-  border: solid 2px #2C3333;
+  background: #F0ECE5;
+  border: solid 2px #31304D;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 2;
-  box-shadow: 0 4px 6px #2c3333d3;
+  box-shadow: 0 4px 6px #161A30;
 }
 
 .pagetop__arrow {
@@ -83,7 +83,7 @@ header {
 
 .logo {
   font-size: 20px;
-  color: #CBE4DE;
+  color: #F0ECE5;
   z-index: 100000;
 
 }
@@ -105,11 +105,11 @@ header {
 .hamburger .bar {
   width: 40px;
   height: 3px;
-  background: #CBE4DE;
+  background: #F0ECE5;
   border-radius: 2px;
   display: block;
   position: absolute;
-  color: #0F3D3E;
+  color: #31304D;
   transition: all 0.3s;
 }
 
@@ -142,9 +142,9 @@ header {
   position: fixed;
   width: 280px;
   height: 100%;
-  background: #0e8488ca;
+  background: #31304dcb;
   opacity: 0.8;
-  color: #CBE4DE;
+  color: #F0ECE5;
   top: 0;
   left: -100%;
   transition: all 0.5s;
@@ -169,7 +169,7 @@ header {
 
 /* フッターの設定 */
 .footer {
-  background-color: #2E4F4F;
+  background-color: #31304D;
   width: 100%;
   text-align: left;
   font-family: sans-serif;
@@ -196,7 +196,7 @@ header {
 
 .footer .about {
   line-height: 20px;
-  color: #CBE4DE;
+  color: #F0ECE5;
   font-size: 13px;
   font-weight: normal;
   margin: 0;
@@ -204,7 +204,7 @@ header {
 
 .footer .about span {
   display: block;
-  color: #CBE4DE;
+  color: #F0ECE5;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -219,10 +219,10 @@ header {
   width: 35px;
   height: 35px;
   cursor: pointer;
-  background-color: #2E4F4F;
+  background-color: #31304D;
   border-radius: 2px;
   font-size: 20px;
-  color: #CBE4DE;
+  color: #F0ECE5;
   text-align: center;
   line-height: 35px;
   margin-right: 3px;
@@ -237,8 +237,8 @@ header {
 }
 
 .footer .footer-center i {
-  background-color: #2E4F4F;
-  color: #CBE4DE;
+  background-color: #31304D;
+  color: #F0ECE5;
   font-size: 25px;
   width: 38px;
   height: 38px;
@@ -256,7 +256,7 @@ header {
 
 .footer .footer-center p {
   display: inline-block;
-  color: #CBE4DE;
+  color: #F0ECE5;
   vertical-align: middle;
   margin: 0;
 }
@@ -281,7 +281,7 @@ header {
 }
 
 .footer h2 {
-  color: #CBE4DE;
+  color: #F0ECE5;
   font-size: 36px;
   font-weight: normal;
   margin: 0;
@@ -292,7 +292,7 @@ header {
 }
 
 .footer .menu {
-  color: #CBE4DE;
+  color: #F0ECE5;
   margin: 20px 0 12px;
   padding: 0;
 }
@@ -364,7 +364,7 @@ header {
   .timeline-content {
     width: 75%;
     float: left;
-    border-left: 3px #CBE4DE solid;
+    border-left: 3px #F0ECE5 solid;
     padding-left: 30px;
   }
   .timeline-content:before {
@@ -394,7 +394,7 @@ header {
   .timeline-content {
     width: calc(100% - 90px); /* 日付後の幅に合わせて調整 */
     float: left;
-    border-left: 3px #CBE4DE solid;
+    border-left: 3px #F0ECE5 solid;
     padding-left: 20px; /* パディングを調整 */
   }
   .timeline-content:before {
@@ -415,7 +415,7 @@ header {
   height: auto;
   margin: 0;
   padding: 20px;
-  border: 10px solid #CBE4DE;
+  border: 10px solid #F0ECE5;
 }
 
 .underline-Area p {
@@ -423,7 +423,7 @@ header {
 }
 
 .underline-before {
-    background: linear-gradient(#CBE4DE,#CBE4DE) 0 100%/0 5px no-repeat;
+    background: linear-gradient(#F0ECE5,#F0ECE5) 0 100%/0 5px no-repeat;
   /*左から、カラー（始点と終点それぞれ同じものを指定）、position / サイズ横縦 繰り返しの有無 */
 
   transition: 1s;
@@ -484,7 +484,7 @@ h2 {
 /* 上辺と右辺のみ幅5pxの枠線 */
   border-width: 5px 5px 0 0;
   border-style: solid;
-  border-color: #2C3333;
+  border-color: #31304D;
   cursor: pointer;
   /* 普段はボタンはやや薄くする */
   opacity: 0.5;
@@ -529,7 +529,7 @@ h2 {
 }
 /* スライド移動ボタンの色 */
 .button_move {
-  background-color: #2e4f4fc7;
+  background-color: #31304D;
 }
 /* 1番目のスライド選択時 */
 /* 1番目のスライドの透明度を0にして表示する */
@@ -581,8 +581,8 @@ h2 {
   width: 80%; /* ポップアップの幅 */
   max-width: 800px; /* ポップアップの最大幅 */
   height: auto; /* ポップアップの高さを内容に合わせる */
-  background-color:#CBE4DE;
-  border: 5px solid #00bcd4;
+  background-color:#F0ECE5;
+  border: 5px solid #161A30;
   z-index: 9999;
   box-sizing: border-box; /* パディングを含めたサイズ計算 */
   overflow: auto; /* 内容がオーバーフローしたらスクロールバーを表示 */
@@ -592,7 +592,7 @@ h2 {
 }
 
 #popup-text {
-  color: #2C3333;
+  color: #161A30;
   display: flex;
   align-items: center;
   justify-content: start; /* 画像とテキストの間隔を調整 */
@@ -665,10 +665,10 @@ h2 {
   height: 50px;
   margin: 10px 1px;
   text-align: center;
-  background-color: #383c3c;
-  color: #CBE4DE;
+  background-color: #31304D;
+  color: #F0ECE5;
   padding: 10px 12px;
-  border: 3px solid #00bcd4;
+  border: 3px solid yellow;
 }
 
 /* バツ印 */
@@ -676,8 +676,8 @@ label.close-btn {
   position: fixed; /* ビューポートに対して固定 */
   top: 10px; /* 上からの距離 */
   right: 10px; /* 右からの距離 */
-  background: #00bcd4;
-  color: #383c3c;
+  background: #31304D;
+  color: #B6BBC4;
   width: 26px;
   height: 26px;
   text-align: center;
@@ -691,7 +691,7 @@ label.close-btn {
 ./* バツ印のスタイルを調整 */
 .fa-times-circle {
   font-size: 1.9em;
-  color: #00bcd4;
+  color: #31304D;
 }
 
 @media (orientation: landscape){
