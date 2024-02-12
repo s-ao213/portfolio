@@ -255,11 +255,11 @@
                         <!-- スライドを選択するためのラジオボタンリスト。 -->
                         <!-- 数は増減しても構わないです。 最初は1番目を選択状態(checked)にします。-->
                         <!-- Slide各ラジオボタンに個別のidを定義して、nameはすべて同じ値にします。 -->
-                        <input class="slide_select" type="radio" id="SlideA" name="slide_check" checked />
-                        <input class="slide_select" type="radio" id="SlideB" name="slide_check" />
-                        <input class="slide_select" type="radio" id="SlideC" name="slide_check" />
-                        <input class="slide_select" type="radio" id="SlideD" name="slide_check" />
-                        <input class="slide_select" type="radio" id="SlideE" name="slide_check" />
+                        <input class="slide_select" type="radio" id="SlideA" name="slide_check1" checked />
+                        <input class="slide_select" type="radio" id="SlideB" name="slide_check1" />
+                        <input class="slide_select" type="radio" id="SlideC" name="slide_check1" />
+                        <input class="slide_select" type="radio" id="SlideD" name="slide_check1" />
+                        <input class="slide_select" type="radio" id="SlideE" name="slide_check1" />
                         <!-- スライド -->
                         <!-- 上のラジオボックスと同じ数だけ記述します。-->
                         <div class="slide">
@@ -322,8 +322,59 @@
 
             <div class="section2">
                 <br>
-                <u><a half="https://github.com/s-ao213/PySide_calendar.git">カレンダーアプリ開発(Python使用)</a></u>
+                <u><a href="https://github.com/s-ao213/PySide_calendar.git">カレンダーアプリ開発(Python使用)</a></u>
                 <p>2024年1月にPySideを用いてカレンダーアプリを開発しました。このアプリはユーザーが日付を選択し、予定を追加できる機能を持っています。アプリを起動している間、入力された予定はメモリに保存され、ユーザーは情報を編集することができます。さらに予定は家、学校、職場、プライベート、その他で分類・色分けをされて、予定が登録されると日付はその色で表示されるため、簡単に予定の概要を把握することが可能です。</p>
+                <div class="carousel">
+                    <!-- スライドのリスト -->
+                    <div class="contains">
+                        <!-- スライドを選択するためのラジオボタンリスト。 -->
+                        <!-- 数は増減しても構わないです。 最初は1番目を選択状態(checked)にします。-->
+                        <!-- Slide各ラジオボタンに個別のidを定義して、nameはすべて同じ値にします。 -->
+                        <input class="slide_select" type="radio" id="SlideF" name="slide_check2" checked />
+                        <input class="slide_select" type="radio" id="SlideG" name="slide_check2" />
+                        <input class="slide_select" type="radio" id="SlideH" name="slide_check2" />
+                        <!-- スライド -->
+                        <!-- 上のラジオボックスと同じ数だけ記述します。-->
+                        <div class="slide">
+                            <!-- スライドの前へ、次へとスクロールさせるボタン -->
+                            <div class="scroll_controler">
+                                <!-- 前へボタン forで戻る先のラジオボタンのidを書きます。-->
+                                <!-- 先頭要素なので、最後のスライドのidである"SlideD"を書いています。 -->
+                                <label class="scroll_button scroll_prev" for="SlideH"></label>
+                                <!-- 次へボタン 上と同様にforで進む先のラジオボタンのidを書きます。-->
+                                <!-- 進み先は2番目の要素なので、2番目のスライドのid"SlideB"を書いています。 -->
+                                <label class="scroll_button scroll_next" for="SlideG"></label>
+                            </div>
+                            <!-- スライドの内容（ここでは画像）を記述します。 -->
+                            <!-- div要素に変えれば文字を加えることもできます。 -->
+                            <img id="sample_pictures" src="カレンダー.png" >
+                        </div>
+                        <!-- スライド（2番目）内容は1個めと同じ -->
+                        <div class="slide">
+                            <div class="controler_scroll">
+                                <label class="scroll_button scroll_prev" for="SlideF"></label>
+                                <label class="scroll_button scroll_next" for="SlideH"></label>
+                            </div>
+                            <img id="sample_pictures" src="カレンダー2.png">
+                        </div>
+                        <!-- スライド（3番目）内容は1個めと同じ -->
+                        <div class="slide">
+                            <div class="controler_scroll">
+                                <label class="scroll_button scroll_prev" for="SlideG"></label>
+                                <label class="scroll_button scroll_next" for="SlideF"></label>
+                            </div>
+                            <img id="sample_pictures" src="予定入力画面.png">
+                        </div>
+                        <!-- スライド移動用ボタン -->
+                        <div class="move_controler">
+                            <!-- 1個目のスライドのボタン -->
+                            <!-- 一番上のラジオボタンの1個目のスライドのid”A”をforに定義します-->
+                            <label class="button_move" for="SlideF"></label>
+                            <label class="button_move" for="SlideG"></label>
+                            <label class="button_move" for="SlideH"></label>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <p> 
