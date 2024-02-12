@@ -1,421 +1,418 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-    
-    <!-- ヘッダーの設定 -->
-    <header>
-        <!-- 右上 -->
-        <div class="logo">
-            <p id="logo2" >Aoi Portfolio</p>
-        </div>
-
-        <!-- ハンバーガーメニュー -->
-        <input type="checkbox" id="checkbox" class="checkbox">
-        <label for="checkbox" class="hamburger">
-            <span class="bar bar-top"></span>
-            <span class="bar bar-middle"></span>
-            <span class="bar bar-bottom"></span>
-        </label>
-        <!-- 選択肢 -->
-        <nav class="nav-menu">
-            <ul>
-            <li><a href="#about">about</a></li>
-            <li><a href="#history">history</a></li>
-            <li><a href="#skill">skill</a></li>
-            <li><a href="#product">product</a></li>
-            </ul>
-        </nav>
-    </header>
-
-</head>
-
-<body>
-    <!-- 一番大きいアイコン -->
-    <div style="text-align: center;" class="section">
-        <img class="icon" src="アイコン画像.jpg" alt="私のアイコン">
-        <p id="title1">Aoi Portfolio</p>
-    </div>
-    <!-- 本文 -->
-    <main>
-        <!-- about 自分について -->
-        <div class="section">
-            <h2 id="about"><span class="underline-before">about</span></h2>
-            <p>大阪公立大学工業高等専門学校知能情報コースの在学生です。<br>
-                趣味は読書とゲームで、休みの日はよくスプラトゥーンをしています。<br>
-                プログラミング研究会所属です。
-            </p>
-        </div>
-        <!-- history 今までの経験 -->
-        <div class="section">
-            <h2 id="history"><span class="underline-before">history</span></h2>
-            <br>
-            <ul class="timeline">
-                <li>
-                    <p class="timeline-date">2022年4月</p>
-                    <div class="timeline-content">
-                        <h3>大阪公立大学工業高等専門学校に入学</h3>
-                        <p>総合工学システム学科に入学するとともに、プログラミング研究会に入部しC++の基礎について学びました。</p>
-                    </div>
-                </li>
-                <li>
-                    <p class="timeline-date">2022年5月</p>
-                    <div class="timeline-content">
-                        <h3>TRでwebデザインを学ぶ</h3>
-                        <p><u><a style="display: inline;" href="https://techrunway.jp/">Tech Runway</a></u>に参加しHTML、JS、CSSを学びはじめました。</p>
-                    </div>
-                </li>
-                <li>
-                    <p class="timeline-date">2022年9月</p>
-                    <div class="timeline-content">
-                        <h3>プログラミング甲子園参加</h3>
-                        <p>競技部門の予選に参加しました。</p>
-                    </div>
-                </li>
-                <li>
-                    <p class="timeline-date">2023年4月</p>
-                    <div class="timeline-content">
-                        <h3>知能情報コース進学</h3>
-                        <p>1年目はPython、HTML、CSS、JavaScript、C言語等のコーディングやWebデザインの基礎を学びました。</p>
-                    </div>
-                </li>
-                <li>
-                    <p class="timeline-date">2023年5月</p>
-                    <div class="timeline-content">
-                        <h3>Hack Uのプロジェクトに参加</h3>
-                        <p>
-                            学校の総合課題実習の一環で、私たちはYahoo!が運営する<u><a style="display: inline;" href="https://hacku.yahoo.co.jp/">Hack U</a></u> プロジェクトに参加しました。この活動で校内での地震をリアルなシミュレーションとして再現し、VRゴーグルを活用して学生たちに実際の避難体験を提供するプログラムを開発しました。</p>
-                    </div>
-                </li>
-                <li>
-                    <p class="timeline-date">2023年9月</p>
-                    <div class="timeline-content">
-                        <h3>プログラミング甲子園参加</h3>
-                        <p>競技部門の予選に参加しました。</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    
-    
-        <div class="section">
-            <h2 id="skill"><span class="underline-before">skill</span></h2>
-            <p>クリックしていただくと詳しい説明がでてきます。</p>
-            <div class="popup-grid">
-                <!-- HTML -->
-                <div class="popup-wrapper">
-                    <input id="open-html" type="checkbox">
-                    <label for="open-html" class="open-btn">HTML & CSS</label>
-                    <label for="open-html" class="overlay"></label>
-                    <div class="popup-content">
-                        <label for="open-html" class="close-btn"><i class="fas fa-times-circle"></i></label>
-                        <div id="popup-text">
-                            <div class="popup-image">
-                            <img src="HTMLのロゴ.png" alt="HTMLのロゴ">
-                            </div>
-                            <div class="popup-description">
-                                <h3>勉強時間:250時間</h3>
-                                <p>tech runwayをきっかけにWebページ制作に興味を持ち、このポートフォリオがその集大成です。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- C++ -->
-                <div class="popup-wrapper">
-                    <input id="open-cpp" type="checkbox">
-                    <label for="open-cpp" class="open-btn">C++</label>
-                    <label for="open-cpp" class="overlay"></label>
-                    <div class="popup-content">
-                        <label for="open-cpp" class="close-btn"><i class="fas fa-times-circle"></i></label>
-                        <div id="popup-text">
-                            <div class="popup-image">
-                            <img src="C++のロゴ.png" alt="C++のロゴ">
-                            </div>
-                            <div class="popup-description">
-                                <h5>勉強時間:150時間</h5>
-                                <p>クラブ活動をきっかけに学び始め、実験実習でアルディーノを触ったことをきっかけに、アルゴリズムだけでなく簡単なマイコン制御も行えます。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <!-- Python -->
-                <div class="popup-wrapper">
-                    <input id="open-python" type="checkbox">
-                    <label for="open-python" class="open-btn">Python</label>
-                    <label for="open-python" class="overlay"></label>
-                
-                    <div class="popup-content">
-                        <label for="open-python" class="close-btn"><i class="fas fa-times-circle"></i></label>
-                        <div id="popup-text">
-                            <div class="popup-image">
-                            <img src="Pythonのロゴ.png" alt="Pythonのロゴ">
-                            </div>
-                            <div class="popup-description">
-                                <h5>勉強時間:122時間</h5>
-                                <p>授業をきっけにゲーム制作に興味を持ち、その集大成としてオリジナルテトリスを作成しました。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- JS -->
-                <div class="popup-wrapper">
-                    <input id="open-javascript" type="checkbox">
-                    <label for="open-javascript" class="open-btn">javascript</label>
-                    <label for="open-javascript" class="overlay"></label>
-                
-                    <div class="popup-content">
-                        <label for="open-javascript" class="close-btn"><i class="fas fa-times-circle"></i></label>
-                        <div id="popup-text">
-                            <div class="popup-image">
-                            <img src="JSのロゴ.png" alt="JSのロゴ">
-                            </div>
-                            <div class="popup-description">
-                                <h5>勉強時間:200時間</h5>
-                                <p>HTML・CSSでつくったWebサイトに動きを入れたいと思い勉強を始めました。簡単なif文やfor文を使ったプログラムを書けます。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Unity -->
-                <div class="popup-wrapper">
-                    <input id="open-unity" type="checkbox">
-                    <label for="open-unity" class="open-btn">Unity</label>
-                    <label for="open-unity" class="overlay"></label>
-                
-                    <div class="popup-content">
-                        <label for="open-unity" class="close-btn"><i class="fas fa-times-circle"></i></label>
-                        <div id="popup-text">
-                            <div class="popup-image">
-                            <img src="Unityのロゴ.webp" alt="Unityのロゴ">
-                            </div>
-                            <div class="popup-description">
-                                <h5>勉強時間:70時間</h5>
-                                <p>ゲームを制作してみたいと思い、C#の勉強も兼ねて始めました。学校の活動の一環としてもUnityを使っており、マニュアルを見ながらゲームを作れます。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tera Term -->
-                <div class="popup-wrapper">
-                    <input id="open-teraterm" type="checkbox">
-                    <label for="open-teraterm" class="open-btn">Tera Term</label>
-                    <label for="open-teraterm" class="overlay"></label>
-                
-                    <div class="popup-content">
-                        <label for="open-teraterm" class="close-btn"><i class="fas fa-times-circle"></i></label>
-                        <div id="popup-text">
-                            <div class="popup-image">
-                            <img src="TeraTermのロゴ.jpg" alt="TeraTermのロゴ">
-                            </div>
-                            <div class="popup-description">
-                                <h5>20時間</h5>
-                                <p>Ciscoを利用してサブネットマスクやVlanの簡単な設定ができます。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <title>portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
         
-        <div class="section">
-            <h2 id="product"><span class="underline-before">product</span></h2>
-
-            <div class="section2">
-                <u><a href="https://github.com/s-ao213/kadai5.git">ガチャシミュレーション（Pythonを使用）</a></u>
-                <p>2023年の夏休みにガチャゲームのシミュレーションを作成しました。</p>
-                <br>
+        <!-- ヘッダーの設定 -->
+        <header>
+            <!-- 右上 -->
+            <div class="logo">
+                <p id="logo2" >Aoi Portfolio</p>
             </div>
 
-            <div class="section2">
-                <u><a href="https://s-ao213.github.io/osero/osero.html">★オセロゲーム</a></u>
-                <p>2023年の高専祭展示のためにHTML、JS、CSSを用いてオセロゲームのイメージをつかむために作成しました。</p>
-                <br>
-            </div>
+            <!-- ハンバーガーメニュー -->
+            <input type="checkbox" id="checkbox" class="checkbox">
+            <label for="checkbox" class="hamburger">
+                <span class="bar bar-top"></span>
+                <span class="bar bar-middle"></span>
+                <span class="bar bar-bottom"></span>
+            </label>
+            <!-- 選択肢 -->
+            <nav class="nav-menu">
+                <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#history">history</a></li>
+                <li><a href="#skill">skill</a></li>
+                <li><a href="#product">product</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            <div class="section2">
-                <u><a href="https://github.com/s-ao213/pyhton-game.git">オリジナルテトリス(Pyhtonを使用)</a></u>
-                <p>2023年、12月に1年間のPython学習の集大成として作品を作りました。既存のゲームであるテトリスをイメージして作成したゲームです。左右の矢印キーでブロックの位置、上下の矢印キーでブロックの向きを変更することができます。またenterキーでブロックを投下することができ、横1列のマスが埋まると消えてスコアに100点が加算され、2分間で1000点取れるとクリアです。一番上までブロックがたまると強制的にGAME OVERです。
-                    <br>また画面右上で次に出てくるブロックを確認することができます。2回目以降は前回の記録も確認できるようになっているのでぜひ何度もプレイしてみてください。自動で落ちてくる機能はまだ実装できていません。</p>
+    </head>
+
+    <body>
+        <!-- 一番大きいアイコン -->
+        <div style="text-align: center;" class="section">
+            <img class="icon" src="アイコン画像.jpg" alt="私のアイコン">
+            <p id="title1">Aoi Portfolio</p>
+        </div>
+        <!-- 本文 -->
+        <main>
+            <!-- about 自分について -->
+            <div class="section">
+                <h2 id="about"><span class="underline-before">about</span></h2>
+                <p>大阪公立大学工業高等専門学校知能情報コースの在学生です。<br>
+                    趣味は読書とゲームで、休みの日はよくスプラトゥーンをしています。<br>
+                    プログラミング研究会所属です。
+                </p>
+            </div>
+            <!-- history 今までの経験 -->
+            <div class="section">
+                <h2 id="history"><span class="underline-before">history</span></h2>
                 <br>
-                <div class="carousel">
-                    <!-- スライドのリスト -->
-                    <div class="contains">
-                        <!-- スライドを選択するためのラジオボタンリスト。 -->
-                        <!-- 数は増減しても構わないです。 最初は1番目を選択状態(checked)にします。-->
-                        <!-- Slide各ラジオボタンに個別のidを定義して、nameはすべて同じ値にします。 -->
-                        <input class="slide_select" type="radio" id="SlideA" name="slide_check1" checked />
-                        <input class="slide_select" type="radio" id="SlideB" name="slide_check1" />
-                        <input class="slide_select" type="radio" id="SlideC" name="slide_check1" />
-                        <input class="slide_select" type="radio" id="SlideD" name="slide_check1" />
-                        <input class="slide_select" type="radio" id="SlideE" name="slide_check1" />
-                        <!-- スライド -->
-                        <!-- 上のラジオボックスと同じ数だけ記述します。-->
-                        <div class="slide">
-                            <!-- スライドの前へ、次へとスクロールさせるボタン -->
-                            <div class="scroll_controler">
-                                <!-- 前へボタン forで戻る先のラジオボタンのidを書きます。-->
-                                <!-- 先頭要素なので、最後のスライドのidである"SlideD"を書いています。 -->
-                                <label class="scroll_button scroll_prev" for="SlideE"></label>
-                                <!-- 次へボタン 上と同様にforで進む先のラジオボタンのidを書きます。-->
-                                <!-- 進み先は2番目の要素なので、2番目のスライドのid"SlideB"を書いています。 -->
-                                <label class="scroll_button scroll_next" for="SlideB"></label>
-                            </div>
-                            <!-- スライドの内容（ここでは画像）を記述します。 -->
-                            <!-- div要素に変えれば文字を加えることもできます。 -->
-                            <img id="sample_pictures" src="テトリス1.png" >
+                <ul class="timeline">
+                    <li>
+                        <p class="timeline-date">2022年4月</p>
+                        <div class="timeline-content">
+                            <h3>大阪公立大学工業高等専門学校に入学</h3>
+                            <p>総合工学システム学科に入学するとともに、プログラミング研究会に入部しC++の基礎について学びました。</p>
                         </div>
-                        <!-- スライド（2番目）内容は1個めと同じ -->
-                        <div class="slide">
-                            <div class="controler_scroll">
-                                <label class="scroll_button scroll_prev" for="SlideA"></label>
-                                <label class="scroll_button scroll_next" for="SlideC"></label>
-                            </div>
-                            <img id="sample_pictures" src="テトリス2.png">
+                    </li>
+                    <li>
+                        <p class="timeline-date">2022年5月</p>
+                        <div class="timeline-content">
+                            <h3>TRでwebデザインを学ぶ</h3>
+                            <p><u><a style="display: inline;" href="https://techrunway.jp/">Tech Runway</a></u>に参加しHTML、JS、CSSを学びはじめました。</p>
                         </div>
-                        <!-- スライド（3番目）内容は1個めと同じ -->
-                        <div class="slide">
-                            <div class="controler_scroll">
-                                <label class="scroll_button scroll_prev" for="SlideB"></label>
-                                <label class="scroll_button scroll_next" for="SlideD"></label>
-                            </div>
-                            <img id="sample_pictures" src="テトリス3.png">
+                    </li>
+                    <li>
+                        <p class="timeline-date">2022年9月</p>
+                        <div class="timeline-content">
+                            <h3>プログラミング甲子園参加</h3>
+                            <p>競技部門の予選に参加しました。</p>
                         </div>
-                        <div class="slide">
-                            <div class="controler_scroll">
-                                <label class="scroll_button scroll_prev" for="SlideC"></label>
-                                <label class="scroll_button scroll_next" for="SlideE"></label>
-                            </div>
-                            <img id="sample_pictures" src="テトリス4.png">
+                    </li>
+                    <li>
+                        <p class="timeline-date">2023年4月</p>
+                        <div class="timeline-content">
+                            <h3>知能情報コース進学</h3>
+                            <p>1年目はPython、HTML、CSS、JavaScript、C言語等のコーディングやWebデザインの基礎を学びました。</p>
                         </div>
-                        <div class="slide">
-                            <div class="controler_scroll">
-                                <label class="scroll_button scroll_prev" for="SlideD"></label>
-                                <label class="scroll_button scroll_next" for="SlideA"></label>
-                            </div>
-                            <img id="sample_pictures" src="テトリス5.png">
+                    </li>
+                    <li>
+                        <p class="timeline-date">2023年5月</p>
+                        <div class="timeline-content">
+                            <h3>Hack Uのプロジェクトに参加</h3>
+                            <p>
+                                学校の総合課題実習の一環で、私たちはYahoo!が運営する<u><a style="display: inline;" href="https://hacku.yahoo.co.jp/">Hack U</a></u> プロジェクトに参加しました。この活動で校内での地震をリアルなシミュレーションとして再現し、VRゴーグルを活用して学生たちに実際の避難体験を提供するプログラムを開発しました。</p>
                         </div>
-                        <!-- スライド移動用ボタン -->
-                        <div class="move_controler">
-                            <!-- 1個目のスライドのボタン -->
-                            <!-- 一番上のラジオボタンの1個目のスライドのid”A”をforに定義します-->
-                            <label class="button_move" for="SlideA"></label>
-                            <label class="button_move" for="SlideB"></label>
-                            <label class="button_move" for="SlideC"></label>
-                            <label class="button_move" for="SlideD"></label>
-                            <label class="button_move" for="SlideE"></label>
+                    </li>
+                    <li>
+                        <p class="timeline-date">2023年9月</p>
+                        <div class="timeline-content">
+                            <h3>プログラミング甲子園参加</h3>
+                            <p>競技部門の予選に参加しました。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+        
+            <div class="section">
+                <h2 id="skill"><span class="underline-before">skill</span></h2>
+                <p>クリックしていただくと詳しい説明がでてきます。</p>
+                <div class="popup-grid">
+                    <!-- HTML -->
+                    <div class="popup-wrapper">
+                        <input id="open-html" type="checkbox">
+                        <label for="open-html" class="open-btn">HTML & CSS</label>
+                        <label for="open-html" class="overlay"></label>
+                        <div class="popup-content">
+                            <label for="open-html" class="close-btn"><i class="fas fa-times-circle"></i></label>
+                            <div id="popup-text">
+                                <div class="popup-image">
+                                <img src="HTMLのロゴ.png" alt="HTMLのロゴ">
+                                </div>
+                                <div class="popup-description">
+                                    <h3>勉強時間:250時間</h3>
+                                    <p>tech runwayをきっかけにWebページ制作に興味を持ち、このポートフォリオがその集大成です。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- C++ -->
+                    <div class="popup-wrapper">
+                        <input id="open-cpp" type="checkbox">
+                        <label for="open-cpp" class="open-btn">C++</label>
+                        <label for="open-cpp" class="overlay"></label>
+                        <div class="popup-content">
+                            <label for="open-cpp" class="close-btn"><i class="fas fa-times-circle"></i></label>
+                            <div id="popup-text">
+                                <div class="popup-image">
+                                <img src="C++のロゴ.png" alt="C++のロゴ">
+                                </div>
+                                <div class="popup-description">
+                                    <h5>勉強時間:150時間</h5>
+                                    <p>クラブ活動をきっかけに学び始め、実験実習でアルディーノを触ったことをきっかけに、アルゴリズムだけでなく簡単なマイコン制御も行えます。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Python -->
+                    <div class="popup-wrapper">
+                        <input id="open-python" type="checkbox">
+                        <label for="open-python" class="open-btn">Python</label>
+                        <label for="open-python" class="overlay"></label>
+                    
+                        <div class="popup-content">
+                            <label for="open-python" class="close-btn"><i class="fas fa-times-circle"></i></label>
+                            <div id="popup-text">
+                                <div class="popup-image">
+                                <img src="Pythonのロゴ.png" alt="Pythonのロゴ">
+                                </div>
+                                <div class="popup-description">
+                                    <h5>勉強時間:122時間</h5>
+                                    <p>授業をきっけにゲーム制作に興味を持ち、その集大成としてオリジナルテトリスを作成しました。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JS -->
+                    <div class="popup-wrapper">
+                        <input id="open-javascript" type="checkbox">
+                        <label for="open-javascript" class="open-btn">javascript</label>
+                        <label for="open-javascript" class="overlay"></label>
+                    
+                        <div class="popup-content">
+                            <label for="open-javascript" class="close-btn"><i class="fas fa-times-circle"></i></label>
+                            <div id="popup-text">
+                                <div class="popup-image">
+                                <img src="JSのロゴ.png" alt="JSのロゴ">
+                                </div>
+                                <div class="popup-description">
+                                    <h5>勉強時間:200時間</h5>
+                                    <p>HTML・CSSでつくったWebサイトに動きを入れたいと思い勉強を始めました。簡単なif文やfor文を使ったプログラムを書けます。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Unity -->
+                    <div class="popup-wrapper">
+                        <input id="open-unity" type="checkbox">
+                        <label for="open-unity" class="open-btn">Unity</label>
+                        <label for="open-unity" class="overlay"></label>
+                    
+                        <div class="popup-content">
+                            <label for="open-unity" class="close-btn"><i class="fas fa-times-circle"></i></label>
+                            <div id="popup-text">
+                                <div class="popup-image">
+                                <img src="Unityのロゴ.webp" alt="Unityのロゴ">
+                                </div>
+                                <div class="popup-description">
+                                    <h5>勉強時間:70時間</h5>
+                                    <p>ゲームを制作してみたいと思い、C#の勉強も兼ねて始めました。学校の活動の一環としてもUnityを使っており、マニュアルを見ながらゲームを作れます。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tera Term -->
+                    <div class="popup-wrapper">
+                        <input id="open-teraterm" type="checkbox">
+                        <label for="open-teraterm" class="open-btn">Tera Term</label>
+                        <label for="open-teraterm" class="overlay"></label>
+                    
+                        <div class="popup-content">
+                            <label for="open-teraterm" class="close-btn"><i class="fas fa-times-circle"></i></label>
+                            <div id="popup-text">
+                                <div class="popup-image">
+                                <img src="TeraTermのロゴ.jpg" alt="TeraTermのロゴ">
+                                </div>
+                                <div class="popup-description">
+                                    <h5>20時間</h5>
+                                    <p>Ciscoを利用してサブネットマスクやVlanの簡単な設定ができます。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 id="product"><span class="underline-before">product</span></h2>
+
+                <div class="section2">
+                    <u><a href="https://github.com/s-ao213/kadai5.git">ガチャシミュレーション（Pythonを使用）</a></u>
+                    <p>2023年の夏休みにガチャゲームのシミュレーションを作成しました。</p>
+                    <br>
+                </div>
+
+                <div class="section2">
+                    <u><a href="https://s-ao213.github.io/osero/osero.html">★オセロゲーム</a></u>
+                    <p>2023年の高専祭展示のためにHTML、JS、CSSを用いてオセロゲームのイメージをつかむために作成しました。</p>
+                    <br>
+                </div>
+
+                <div class="section2">
+                    <u><a href="https://github.com/s-ao213/pyhton-game.git">オリジナルテトリス(Pyhtonを使用)</a></u>
+                    <p>2023年、12月に1年間のPython学習の集大成として作品を作りました。既存のゲームであるテトリスをイメージして作成したゲームです。左右の矢印キーでブロックの位置、上下の矢印キーでブロックの向きを変更することができます。またenterキーでブロックを投下することができ、横1列のマスが埋まると消えてスコアに100点が加算され、2分間で1000点取れるとクリアです。一番上までブロックがたまると強制的にGAME OVERです。
+                        <br>また画面右上で次に出てくるブロックを確認することができます。2回目以降は前回の記録も確認できるようになっているのでぜひ何度もプレイしてみてください。自動で落ちてくる機能はまだ実装できていません。</p>
+                    <br>
+                    <div class="carousel">
+                        <!-- スライドのリスト -->
+                        <div class="contains">
+                            <!-- スライドを選択するためのラジオボタンリスト。 -->
+                            <!-- 数は増減しても構わないです。 最初は1番目を選択状態(checked)にします。-->
+                            <!-- Slide各ラジオボタンに個別のidを定義して、nameはすべて同じ値にします。 -->
+                            <input class="slide_select" type="radio" id="SlideA" name="slide_check1" checked />
+                            <input class="slide_select" type="radio" id="SlideB" name="slide_check1" />
+                            <input class="slide_select" type="radio" id="SlideC" name="slide_check1" />
+                            <input class="slide_select" type="radio" id="SlideD" name="slide_check1" />
+                            <input class="slide_select" type="radio" id="SlideE" name="slide_check1" />
+                            <!-- スライド -->
+                            <!-- 上のラジオボックスと同じ数だけ記述します。-->
+                            <div class="slide">
+                                <!-- スライドの前へ、次へとスクロールさせるボタン -->
+                                <div class="scroll_controler">
+                                    <!-- 前へボタン forで戻る先のラジオボタンのidを書きます。-->
+                                    <!-- 先頭要素なので、最後のスライドのidである"SlideD"を書いています。 -->
+                                    <label class="scroll_button scroll_prev" for="SlideE"></label>
+                                    <!-- 次へボタン 上と同様にforで進む先のラジオボタンのidを書きます。-->
+                                    <!-- 進み先は2番目の要素なので、2番目のスライドのid"SlideB"を書いています。 -->
+                                    <label class="scroll_button scroll_next" for="SlideB"></label>
+                                </div>
+                                <!-- スライドの内容（ここでは画像）を記述します。 -->
+                                <!-- div要素に変えれば文字を加えることもできます。 -->
+                                <img id="sample_pictures" src="テトリス1.png" >
+                            </div>
+                            <!-- スライド（2番目）内容は1個めと同じ -->
+                            <div class="slide">
+                                <div class="controler_scroll">
+                                    <label class="scroll_button scroll_prev" for="SlideA"></label>
+                                    <label class="scroll_button scroll_next" for="SlideC"></label>
+                                </div>
+                                <img id="sample_pictures" src="テトリス2.png">
+                            </div>
+                            <!-- スライド（3番目）内容は1個めと同じ -->
+                            <div class="slide">
+                                <div class="controler_scroll">
+                                    <label class="scroll_button scroll_prev" for="SlideB"></label>
+                                    <label class="scroll_button scroll_next" for="SlideD"></label>
+                                </div>
+                                <img id="sample_pictures" src="テトリス3.png">
+                            </div>
+                            <div class="slide">
+                                <div class="controler_scroll">
+                                    <label class="scroll_button scroll_prev" for="SlideC"></label>
+                                    <label class="scroll_button scroll_next" for="SlideE"></label>
+                                </div>
+                                <img id="sample_pictures" src="テトリス4.png">
+                            </div>
+                            <div class="slide">
+                                <div class="controler_scroll">
+                                    <label class="scroll_button scroll_prev" for="SlideD"></label>
+                                    <label class="scroll_button scroll_next" for="SlideA"></label>
+                                </div>
+                                <img id="sample_pictures" src="テトリス5.png">
+                            </div>
+                            <!-- スライド移動用ボタン -->
+                            <div class="move_controler">
+                                <!-- 1個目のスライドのボタン -->
+                                <!-- 一番上のラジオボタンの1個目のスライドのid”A”をforに定義します-->
+                                <label class="button_move" for="SlideA"></label>
+                                <label class="button_move" for="SlideB"></label>
+                                <label class="button_move" for="SlideC"></label>
+                                <label class="button_move" for="SlideD"></label>
+                                <label class="button_move" for="SlideE"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section2">
+                    <br>
+                    <u><a href="https://github.com/s-ao213/PySide_calendar.git">カレンダーアプリ開発(Python使用)</a></u>
+                    <p>2024年1月にPySideを用いてカレンダーアプリを開発しました。このアプリはユーザーが日付を選択し、予定を追加できる機能を持っています。アプリを起動している間、入力された予定はメモリに保存され、ユーザーは情報を編集することができます。さらに予定は家、学校、職場、プライベート、その他で分類・色分けをされて、予定が登録されると日付はその色で表示されるため、簡単に予定の概要を把握することが可能です。</p>
+                    <div class="carousel">
+                        <!-- スライドのリスト -->
+                        <div class="contains">
+                            <!-- スライドを選択するためのラジオボタンリスト。 -->
+                            <!-- 数は増減しても構わないです。 最初は1番目を選択状態(checked)にします。-->
+                            <!-- Slide各ラジオボタンに個別のidを定義して、nameはすべて同じ値にします。 -->
+                            <input class="slide_select" type="radio" id="SlideF" name="slide_check2" checked />
+                            <input class="slide_select" type="radio" id="SlideG" name="slide_check2" />
+                            <input class="slide_select" type="radio" id="SlideH" name="slide_check2" />
+                            <!-- スライド -->
+                            <!-- 上のラジオボックスと同じ数だけ記述します。-->
+                            <div class="slide">
+                                <!-- スライドの前へ、次へとスクロールさせるボタン -->
+                                <div class="scroll_controler">
+                                    <!-- 前へボタン forで戻る先のラジオボタンのidを書きます。-->
+                                    <!-- 先頭要素なので、最後のスライドのidである"SlideD"を書いています。 -->
+                                    <label class="scroll_button scroll_prev" for="SlideH"></label>
+                                    <!-- 次へボタン 上と同様にforで進む先のラジオボタンのidを書きます。-->
+                                    <!-- 進み先は2番目の要素なので、2番目のスライドのid"SlideB"を書いています。 -->
+                                    <label class="scroll_button scroll_next" for="SlideG"></label>
+                                </div>
+                                <!-- スライドの内容（ここでは画像）を記述します。 -->
+                                <!-- div要素に変えれば文字を加えることもできます。 -->
+                                <img id="sample_pictures" src="カレンダー.png" >
+                            </div>
+                            <!-- スライド（2番目）内容は1個めと同じ -->
+                            <div class="slide">
+                                <div class="controler_scroll">
+                                    <label class="scroll_button scroll_prev" for="SlideF"></label>
+                                    <label class="scroll_button scroll_next" for="SlideH"></label>
+                                </div>
+                                <img id="sample_pictures" src="カレンダー2.png">
+                            </div>
+                            <!-- スライド（3番目）内容は1個めと同じ -->
+                            <div class="slide">
+                                <div class="controler_scroll">
+                                    <label class="scroll_button scroll_prev" for="SlideG"></label>
+                                    <label class="scroll_button scroll_next" for="SlideF"></label>
+                                </div>
+                                <img id="sample_pictures" src="予定入力画面.png">
+                            </div>
+                            <!-- スライド移動用ボタン -->
+                            <div class="move_controler">
+                                <!-- 1個目のスライドのボタン -->
+                                <!-- 一番上のラジオボタンの1個目のスライドのid”A”をforに定義します-->
+                                <label class="button_move" for="SlideF"></label>
+                                <label class="button_move" for="SlideG"></label>
+                                <label class="button_move" for="SlideH"></label>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </main>
 
-            <div class="section2">
+        <footer class="footer">
+            <div class="footer-left col-md-4 col-sm-6">
+                <img class="discode" src="アイコン画像.jpg" alt="アイコン画像" width="250px" height="250px">
+            </div>
+            <div class="footer-center col-md-4 col-sm-6">
+                <p class="about">
+                    <h3><span> About Me</span> </h3>
+                </p>
                 <br>
-                <u><a href="https://github.com/s-ao213/PySide_calendar.git">カレンダーアプリ開発(Python使用)</a></u>
-                <p>2024年1月にPySideを用いてカレンダーアプリを開発しました。このアプリはユーザーが日付を選択し、予定を追加できる機能を持っています。アプリを起動している間、入力された予定はメモリに保存され、ユーザーは情報を編集することができます。さらに予定は家、学校、職場、プライベート、その他で分類・色分けをされて、予定が登録されると日付はその色で表示されるため、簡単に予定の概要を把握することが可能です。</p>
-                <div class="carousel">
-                    <!-- スライドのリスト -->
-                    <div class="contains">
-                        <!-- スライドを選択するためのラジオボタンリスト。 -->
-                        <!-- 数は増減しても構わないです。 最初は1番目を選択状態(checked)にします。-->
-                        <!-- Slide各ラジオボタンに個別のidを定義して、nameはすべて同じ値にします。 -->
-                        <input class="slide_select" type="radio" id="SlideF" name="slide_check2" checked />
-                        <input class="slide_select" type="radio" id="SlideG" name="slide_check2" />
-                        <input class="slide_select" type="radio" id="SlideH" name="slide_check2" />
-                        <!-- スライド -->
-                        <!-- 上のラジオボックスと同じ数だけ記述します。-->
-                        <div class="slide">
-                            <!-- スライドの前へ、次へとスクロールさせるボタン -->
-                            <div class="scroll_controler">
-                                <!-- 前へボタン forで戻る先のラジオボタンのidを書きます。-->
-                                <!-- 先頭要素なので、最後のスライドのidである"SlideD"を書いています。 -->
-                                <label class="scroll_button scroll_prev" for="SlideH"></label>
-                                <!-- 次へボタン 上と同様にforで進む先のラジオボタンのidを書きます。-->
-                                <!-- 進み先は2番目の要素なので、2番目のスライドのid"SlideB"を書いています。 -->
-                                <label class="scroll_button scroll_next" for="SlideG"></label>
-                            </div>
-                            <!-- スライドの内容（ここでは画像）を記述します。 -->
-                            <!-- div要素に変えれば文字を加えることもできます。 -->
-                            <img id="sample_pictures" src="カレンダー.png" >
-                        </div>
-                        <!-- スライド（2番目）内容は1個めと同じ -->
-                        <div class="slide">
-                            <div class="controler_scroll">
-                                <label class="scroll_button scroll_prev" for="SlideF"></label>
-                                <label class="scroll_button scroll_next" for="SlideH"></label>
-                            </div>
-                            <img id="sample_pictures" src="カレンダー2.png">
-                        </div>
-                        <!-- スライド（3番目）内容は1個めと同じ -->
-                        <div class="slide">
-                            <div class="controler_scroll">
-                                <label class="scroll_button scroll_prev" for="SlideG"></label>
-                                <label class="scroll_button scroll_next" for="SlideF"></label>
-                            </div>
-                            <img id="sample_pictures" src="予定入力画面.png">
-                        </div>
-                        <!-- スライド移動用ボタン -->
-                        <div class="move_controler">
-                            <!-- 1個目のスライドのボタン -->
-                            <!-- 一番上のラジオボタンの1個目のスライドのid”A”をforに定義します-->
-                            <label class="button_move" for="SlideF"></label>
-                            <label class="button_move" for="SlideG"></label>
-                            <label class="button_move" for="SlideH"></label>
-                        </div>
-                    </div>
+                <p>大阪公立大学工業高等専門学校<br>
+                    2年知能情報コース所属<br>
+                    同学校 プログラミング研究会にも所属
+                </p>
+                <div class="icons">
+                    <!-- <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a> -->
+                    <a href="https://github.com/s-ao213"><img src="GitHubのロゴ.png" alt="GitHubのロゴ" width="35px" height="35px"></a>
+                    <a href="https://discord.com/users/931792151589814294"><img class="discode" src="discodeのロゴ.avif" alt="discodeのロゴ" width="35px" height="35px" ></a>
+                    <a href="mailto:ri22077b@st.omu.ac.jp"><img class="discode" src="outlookのロゴ.jpg" alt="outlookのロゴ" width="35px" height="35px"></a>
                 </div>
             </div>
-        </div>
-
-    </main>
-    
-
-    <footer class="footer">
-        <div class="footer-left col-md-4 col-sm-6">
-            <img class="discode" src="アイコン画像.jpg" alt="アイコン画像" width="250px" height="250px">
-        </div>
-        <div class="footer-center col-md-4 col-sm-6">
-            <p class="about">
-                <h3><span> About Me</span> </h3>
-            </p>
-            <br>
-            <p>大阪公立大学工業高等専門学校<br>
-                2年知能情報コース所属<br>
-                同学校 プログラミング研究会にも所属
-            </p>
-            <div class="icons">
-                <!-- <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a> -->
-                <a href="https://github.com/s-ao213"><img src="GitHubのロゴ.png" alt="GitHubのロゴ" width="35px" height="35px"></a>
-                <a href="https://discord.com/users/931792151589814294"><img class="discode" src="discodeのロゴ.avif" alt="discodeのロゴ" width="35px" height="35px" ></a>
-                <a href="mailto:ri22077b@st.omu.ac.jp"><img class="discode" src="outlookのロゴ.jpg" alt="outlookのロゴ" width="35px" height="35px"></a>
+            <div class="footer-right col-md-4 col-sm-6">
+                <h2> Aoi's portfolio</h2>
+                <p class="menu">
+                    <a href="#"> home</a> |
+                    <a href="#about"> about</a> |
+                    <a href="#history"> history</a> |
+                    <a href="#skill"> skill</a> |
+                    <a href="#product"> product</a> 
+                </p>
+                <p class="name"> 
+                    <br>Copyright Aoi, All Right Reserved
+                </p>
             </div>
-        </div>
-        <div class="footer-right col-md-4 col-sm-6">
-            <h2> Aoi's portfolio</h2>
-            <p class="menu">
-                <a href="#"> home</a> |
-                <a href="#about"> about</a> |
-                <a href="#history"> history</a> |
-                <a href="#skill"> skill</a> |
-                <a href="#product"> product</a> 
-            </p>
-            <p class="name"> 
-                <br>Copyright Aoi, All Right Reserved
-            </p>
-        </div>
-    </footer>
-</body>
-
+        </footer>
+    </body>
 </html>
