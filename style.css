@@ -672,6 +672,7 @@ h2 {
 }
 
 /* バツ印 */
+
 label.close-btn {
   position: fixed; /* ビューポートに対して固定 */
   top: 10px; /* 上からの距離 */
