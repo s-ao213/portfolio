@@ -239,7 +239,7 @@
                 </div>
 
                 <div class="section2">
-                    <u><a href="https://s-ao213.github.io/osero/osero.html">★オセロゲーム</a></u>
+                    <u><a href="https://s-ao213.github.io/osero/osero.html">オセロゲーム</a></u>
                     <p>2023年の高専祭展示のためにHTML、JS、CSSを用いてオセロゲームのイメージをつかむために作成しました。</p>
                     <br>
                 </div>
@@ -252,31 +252,19 @@
                     <div class="carousel">
                         <!-- スライドのリスト -->
                         <div class="contains">
-                            <!-- スライドを選択するためのラジオボタンリスト。 -->
-                            <!-- 数は増減しても構わないです。 最初は1番目を選択状態(checked)にします。-->
-                            <!-- Slide各ラジオボタンに個別のidを定義して、nameはすべて同じ値にします。 -->
                             <input class="slide_select" type="radio" id="SlideA" name="slide_check1" checked />
                             <input class="slide_select" type="radio" id="SlideB" name="slide_check1" />
                             <input class="slide_select" type="radio" id="SlideC" name="slide_check1" />
                             <input class="slide_select" type="radio" id="SlideD" name="slide_check1" />
                             <input class="slide_select" type="radio" id="SlideE" name="slide_check1" />
-                            <!-- スライド -->
-                            <!-- 上のラジオボックスと同じ数だけ記述します。-->
+
                             <div class="slide">
-                                <!-- スライドの前へ、次へとスクロールさせるボタン -->
                                 <div class="scroll_controler">
-                                    <!-- 前へボタン forで戻る先のラジオボタンのidを書きます。-->
-                                    <!-- 先頭要素なので、最後のスライドのidである"SlideD"を書いています。 -->
                                     <label class="scroll_button scroll_prev" for="SlideE"></label>
-                                    <!-- 次へボタン 上と同様にforで進む先のラジオボタンのidを書きます。-->
-                                    <!-- 進み先は2番目の要素なので、2番目のスライドのid"SlideB"を書いています。 -->
                                     <label class="scroll_button scroll_next" for="SlideB"></label>
                                 </div>
-                                <!-- スライドの内容（ここでは画像）を記述します。 -->
-                                <!-- div要素に変えれば文字を加えることもできます。 -->
                                 <img id="sample_pictures" src="テトリス1.png" >
                             </div>
-                            <!-- スライド（2番目）内容は1個めと同じ -->
                             <div class="slide">
                                 <div class="controler_scroll">
                                     <label class="scroll_button scroll_prev" for="SlideA"></label>
@@ -284,7 +272,7 @@
                                 </div>
                                 <img id="sample_pictures" src="テトリス2.png">
                             </div>
-                            <!-- スライド（3番目）内容は1個めと同じ -->
+
                             <div class="slide">
                                 <div class="controler_scroll">
                                     <label class="scroll_button scroll_prev" for="SlideB"></label>
@@ -308,8 +296,6 @@
                             </div>
                             <!-- スライド移動用ボタン -->
                             <div class="move_controler">
-                                <!-- 1個目のスライドのボタン -->
-                                <!-- 一番上のラジオボタンの1個目のスライドのid”A”をforに定義します-->
                                 <label class="button_move" for="SlideA"></label>
                                 <label class="button_move" for="SlideB"></label>
                                 <label class="button_move" for="SlideC"></label>
@@ -327,29 +313,16 @@
                     <div class="carousel">
                         <!-- スライドのリスト -->
                         <div class="contains">
-                            <!-- スライドを選択するためのラジオボタンリスト。 -->
-                            <!-- 数は増減しても構わないです。 最初は1番目を選択状態(checked)にします。-->
-                            <!-- Slide各ラジオボタンに個別のidを定義して、nameはすべて同じ値にします。 -->
                             <input class="slide_select" type="radio" id="SlideF" name="slide_check2" checked />
                             <input class="slide_select" type="radio" id="SlideG" name="slide_check2" />
                             <input class="slide_select" type="radio" id="SlideH" name="slide_check2" />
-                            <!-- スライド -->
-                            <!-- 上のラジオボックスと同じ数だけ記述します。-->
                             <div class="slide">
-                                <!-- スライドの前へ、次へとスクロールさせるボタン -->
                                 <div class="scroll_controler">
-                                    <!-- 前へボタン forで戻る先のラジオボタンのidを書きます。-->
-                                    <!-- 先頭要素なので、最後のスライドのidである"SlideD"を書いています。 -->
                                     <label class="scroll_button scroll_prev" for="SlideH"></label>
-                                    <!-- 次へボタン 上と同様にforで進む先のラジオボタンのidを書きます。-->
-                                    <!-- 進み先は2番目の要素なので、2番目のスライドのid"SlideB"を書いています。 -->
                                     <label class="scroll_button scroll_next" for="SlideG"></label>
                                 </div>
-                                <!-- スライドの内容（ここでは画像）を記述します。 -->
-                                <!-- div要素に変えれば文字を加えることもできます。 -->
                                 <img id="sample_pictures" src="カレンダー.png" >
                             </div>
-                            <!-- スライド（2番目）内容は1個めと同じ -->
                             <div class="slide">
                                 <div class="controler_scroll">
                                     <label class="scroll_button scroll_prev" for="SlideF"></label>
@@ -357,7 +330,6 @@
                                 </div>
                                 <img id="sample_pictures" src="カレンダー2.png">
                             </div>
-                            <!-- スライド（3番目）内容は1個めと同じ -->
                             <div class="slide">
                                 <div class="controler_scroll">
                                     <label class="scroll_button scroll_prev" for="SlideG"></label>
@@ -365,10 +337,7 @@
                                 </div>
                                 <img id="sample_pictures" src="予定入力画面.png">
                             </div>
-                            <!-- スライド移動用ボタン -->
                             <div class="move_controler">
-                                <!-- 1個目のスライドのボタン -->
-                                <!-- 一番上のラジオボタンの1個目のスライドのid”A”をforに定義します-->
                                 <label class="button_move" for="SlideF"></label>
                                 <label class="button_move" for="SlideG"></label>
                                 <label class="button_move" for="SlideH"></label>
@@ -380,7 +349,7 @@
 
             <div class="section2">
                 <u><a href="https://s-ao213.github.io/javascript-project/">javascriptのサイト</a></u>
-                <p>現在制作中</p>
+                <p>2024年7月にHTML、CSS、JavaScriptを用いて初心者向けのJavaScript学習支援サイトを作成しました。制作時間は20時間程度です。このサイトはWeb上で動く簡単な迷路ゲームを作成しながら、JavaScriptの基礎が学べるようになっています。迷路ゲームの作成を通じて、変数とデータ型、関数の定義と使用、条件分岐とループなどの基本的なJavaScriptの概念を学びます。これらの基礎を学びながら実際に動くプログラムを作り上げていくことができます。</p>
             </div>
         </main>
 
