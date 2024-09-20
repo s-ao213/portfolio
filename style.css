@@ -1,5 +1,8 @@
 body {
-  background-color:#161A30;
+  /* background-color:#161A30; */
+  /* background-color: #2a332c; */
+  background: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
+
   font-family: "MS 明朝", serif;
   color: #F0ECE5;
   font-feature-settings: "palt";
@@ -168,7 +171,8 @@ header {
 
 /* フッターの設定 */
 .footer {
-  background-color: #31304D;
+  /* background-color: #31304D; */
+  background-color: #b8a4f4f0;
   width: 100%;
   text-align: left;
   font-family: sans-serif;
@@ -218,7 +222,7 @@ header {
   width: 35px;
   height: 35px;
   cursor: pointer;
-  background-color: #31304D;
+  background-color: #a4e5f400;
   border-radius: 2px;
   font-size: 20px;
   color: #F0ECE5;
