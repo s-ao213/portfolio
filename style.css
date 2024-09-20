@@ -1,11 +1,15 @@
 body {
   /* background-color:#161A30; */
-  /* background-color: #2a332c; */
   background: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
-
-  font-family: "MS 明朝", serif;
   color: #F0ECE5;
-  font-feature-settings: "palt";
+  font-weight: normal;
+  font-family: "M PLUS 1", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.little_title{
+  font-weight: bold;
 }
 
 .section {
@@ -180,7 +184,6 @@ header {
   font-size: 16px;
   padding: 50px;
   margin-top: 50px;
-  font-family:  "MS 明朝", serif;
 }
 
 .footer .footer-left,
