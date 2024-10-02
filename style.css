@@ -709,12 +709,12 @@ h2 {
 
 label.close-btn {
   position: fixed; /* ビューポートに対して固定 */
-  top: 10px; /* 上からの距離 */
+  top: 11px; /* 上からの距離 */
   right: 10px; /* 右からの距離 */
   background: #31304D;
   color: #B6BBC4;
-  width: 26px;
-  height: 26px;
+  width: 25px;
+  height: 26.8px;
   text-align: center;
   border-radius: 50%;
   line-height: 26px;
@@ -722,12 +722,6 @@ label.close-btn {
   z-index: 10000; /* .popup-contentよりも上に表示 */
 }
 
-
-./* バツ印のスタイルを調整 */
-.fa-times-circle {
-  font-size: 1.9em;
-  color: #31304D;
-}
 
 @media (orientation: landscape){
   .popup-content{
