@@ -606,6 +606,43 @@ h2 {
   opacity: 1;
 }
 
+.slide_select[name="slide_check3"]:nth-of-type(1):checked ~ .slide:nth-of-type(1) {
+  opacity: 1;
+}
+.slide_select[name="slide_check3"]:nth-of-type(1):checked
+  ~ .move_controler
+  .button_move:nth-of-type() {
+  opacity: 1;
+}
+
+.slide_select[name="slide_check3"]:nth-of-type(2):checked ~ .slide:nth-of-type(2) {
+  opacity: 1;
+}
+.slide_select[name="slide_check3"]:nth-of-type(2):checked
+  ~ .move_controler
+  .button_move:nth-of-type() {
+  opacity: 1;
+}
+
+.slide_select[name="slide_check3"]:nth-of-type(3):checked ~ .move_controler .button_move:nth-of-type(3) {
+  opacity: 1;
+}
+
+/* スライド4番目のボタン用 */
+.slide_select[name="slide_check3"]:nth-of-type(4):checked ~ .move_controler .button_move:nth-of-type(4) {
+  opacity: 1;
+}
+
+/* 3番目のスライドが選択された時の表示 */
+.slide_select[name="slide_check3"]:nth-of-type(3):checked ~ .slide:nth-of-type(3) {
+  opacity: 1;
+}
+
+/* 4番目のスライドが選択された時の表示 */
+.slide_select[name="slide_check3"]:nth-of-type(4):checked ~ .slide:nth-of-type(4) {
+  opacity: 1;
+}
+
 /* スキル紹介の画像挿入 */
 .popup-content {
   position: fixed;
@@ -665,6 +702,7 @@ h2 {
 
 #open-html:checked ~ .popup-content,
 #open-cpp:checked ~ .popup-content,
+#open-react:checked ~ .popup-content,
 #open-python:checked ~ .popup-content,
 #open-javascript:checked ~ .popup-content,
 #open-unity:checked ~ .popup-content,
@@ -677,6 +715,7 @@ h2 {
 
 #open-html:checked ~ .overlay,
 #open-cpp:checked ~ .overlay,
+#open-react:checked ~ .overlay,
 #open-python:checked ~ .overlay,
 #open-javascript:checked ~ .overlay,
 #open-unity:checked ~ .overlay,
