@@ -336,6 +336,15 @@ header {
   .footer .footer-center i {
     margin-left: 0;
   }
+
+  .project-links {
+    flex-direction: column;
+}
+
+.project-link {
+    width: 100%;
+    justify-content: center;
+}
 }
 
 /* contact */
@@ -449,96 +458,6 @@ h2 {
   font-size: 50px;
 }
 
-/* カルーセル全体 */
-.carousel {
-  /* 水平方向中央寄せ */
-  display: flex;
-  justify-content: center;
-}
-/* カルーセル内容 */
-.contains {
-  /* サイズは自由に変更してください。*/
-  /* 下の.slideも同じサイズにしてください。 */
-  width: 500px;
-  height: 400px;
-  overflow: hidden;
-  position: relative;
-  padding: 0;
-  list-style: none;
-}
-/* スライド切り換え用ラジオボタンは常に非表示 */
-.slide_select {
-  display: none;
-}
-/* 各スライド */
-.slide {
-  /* サイズは自由に変更してください。*/
-  /* 上の.containsも同じサイズにしてください。 */
-  position: absolute;
-  /* スライドの初期値は選択されていないので透明にしておく */
-  opacity: 0;
-}
-
-/* 前へ次へボタン */
-.scroll_button {
-  position: absolute;
-  display: block;
-  height: 20px;
-  width: 20px;
-  /* 縦中央から20px上の位置 */
-  top: 50%;
-  margin-top: -20px;
-/* 上辺と右辺のみ幅5pxの枠線 */
-  border-width: 5px 5px 0 0;
-  border-style: solid;
-  border-color: #31304D;
-  cursor: pointer;
-  /* 普段はボタンはやや薄くする */
-  opacity: 0.5;
-  /* スライドよりも前面にする */
-  z-index: 3;
-}
-
-/* ホバー時にボタンを強調 */
-.scroll_button:hover {
-  opacity: 1;
-}
-/* 前へボタン */
-.scroll_prev {
-  left: 15px;
-  /* 上辺と右辺の枠線を回転して"＜"にする */
-  transform: rotate(-135deg);
-}
-/* 次へボタン */
-.scroll_next {
-  right: 15px;
-  /* 上辺と右辺の枠線を回転して"＞"にする */
-  transform: rotate(45deg);
-}
-
-/* スライド移動の各ボタン */
-.button_move {
-  display: inline-block;
-  height: 10px;
-  width: 10px;
-  margin: 0 2px;
-  border-radius: 100%;
-  cursor: pointer;
-  /* 普段はやや薄くする */
-  opacity: 0.5;
-  /* スライドより前面にする */
-  z-index: 2;
-  text-align: center;
-}
-/* ホバー時はやや明るくする */
-.button_move:hover {
-  opacity: 0.75;
-}
-/* スライド移動ボタンの色 */
-.button_move {
-  background-color: #31304D;
-}
-
 .project-item {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
@@ -644,159 +563,6 @@ h2 {
 .project-link:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 768px) {
-  .project-links {
-      flex-direction: column;
-  }
-  
-  .project-link {
-      width: 100%;
-      justify-content: center;
-  }
-}
-
-/* 1番目のスライド選択時 */
-/* 1番目のスライドの透明度を0にして表示する */
-.slide_select[name="slide_check1"]:nth-of-type(1):checked ~ .slide:nth-of-type(1) {
-  opacity: 1;
-}
-/* スライド移動ボタンの1個目を明るくする */
-/* （今選択されていることが分かるように） */
-.slide_select[name="slide_check1"]:nth-of-type(1):checked ~ .move_controler .button_move:nth-of-type(1) {
-  opacity: 1;
-}
-.slide_select[name="slide_check1"]:nth-of-type(2):checked ~ .slide:nth-of-type(2) {
-  opacity: 1;
-}
-.slide_select[name="slide_check1"]:nth-of-type(2):checked ~ .move_controler .button_move:nth-of-type(2) {
-  opacity: 1;
-}
-.slide_select[name="slide_check1"]:nth-of-type(3):checked ~ .slide:nth-of-type(3) {
-  opacity: 1;
-}
-.slide_select[name="slide_check1"]:nth-of-type(3):checked ~ .move_controler
-  .button_move:nth-of-type(3) {
-  opacity: 1;
-}
-.slide_select[name="slide_check1"]:nth-of-type(4):checked ~ .slide:nth-of-type(4) {
-  opacity: 1;
-}
-.slide_select[name="slide_check1"]:nth-of-type(4):checked
-  ~ .move_controler
-  .button_move:nth-of-type(4) {
-  opacity: 1;
-}
-
-.slide_select[name="slide_check1"]:nth-of-type(5):checked ~ .slide:nth-of-type(5) {
-  opacity: 1;
-}
-.slide_select[name="slide_check1"]:nth-of-type(5):checked
-  ~ .move_controler
-  .button_move:nth-of-type() {
-  opacity: 1;
-}
-
-.slide_select[name="slide_check2"]:nth-of-type(1):checked ~ .slide:nth-of-type(1) {
-  opacity: 1;
-}
-.slide_select[name="slide_check2"]:nth-of-type(1):checked
-  ~ .move_controler
-  .button_move:nth-of-type() {
-  opacity: 1;
-}
-
-.slide_select[name="slide_check2"]:nth-of-type(2):checked ~ .slide:nth-of-type(2) {
-  opacity: 1;
-}
-.slide_select[name="slide_check2"]:nth-of-type(2):checked
-  ~ .move_controler
-  .button_move:nth-of-type() {
-  opacity: 1;
-}
-
-.slide_select[name="slide_check2"]:nth-of-type(3):checked ~ .slide:nth-of-type(3) {
-  opacity: 1;
-}
-.slide_select[name="slide_check2"]:nth-of-type(3):checked
-  ~ .move_controler
-  .button_move:nth-of-type() {
-  opacity: 1;
-}
-
-.slide_select[name="slide_check3"]:nth-of-type(1):checked ~ .slide:nth-of-type(1) {
-  opacity: 1;
-}
-.slide_select[name="slide_check3"]:nth-of-type(1):checked
-  ~ .move_controler
-  .button_move:nth-of-type() {
-  opacity: 1;
-}
-
-.slide_select[name="slide_check3"]:nth-of-type(2):checked ~ .slide:nth-of-type(2) {
-  opacity: 1;
-}
-.slide_select[name="slide_check3"]:nth-of-type(2):checked
-  ~ .move_controler
-  .button_move:nth-of-type() {
-  opacity: 1;
-}
-
-.slide_select[name="slide_check3"]:nth-of-type(3):checked ~ .move_controler .button_move:nth-of-type(3) {
-  opacity: 1;
-}
-
-/* スライド4番目のボタン用 */
-.slide_select[name="slide_check3"]:nth-of-type(4):checked ~ .move_controler .button_move:nth-of-type(4) {
-  opacity: 1;
-}
-
-/* 3番目のスライドが選択された時の表示 */
-.slide_select[name="slide_check3"]:nth-of-type(3):checked ~ .slide:nth-of-type(3) {
-  opacity: 1;
-}
-
-/* 4番目のスライドが選択された時の表示 */
-.slide_select[name="slide_check3"]:nth-of-type(4):checked ~ .slide:nth-of-type(4) {
-  opacity: 1;
-}
-
-.slide_select[name="slide_check4"]:nth-of-type(1):checked ~ .slide:nth-of-type(1) {
-  opacity: 1;
-}
-.slide_select[name="slide_check4"]:nth-of-type(1):checked
-  ~ .move_controler
-  .button_move:nth-of-type() {
-  opacity: 1;
-}
-
-.slide_select[name="slide_check4"]:nth-of-type(2):checked ~ .slide:nth-of-type(2) {
-  opacity: 1;
-}
-.slide_select[name="slide_check4"]:nth-of-type(2):checked
-  ~ .move_controler
-  .button_move:nth-of-type() {
-  opacity: 1;
-}
-
-.slide_select[name="slide_check4"]:nth-of-type(3):checked ~ .move_controler .button_move:nth-of-type(3) {
-  opacity: 1;
-}
-
-/* スライド4番目のボタン用 */
-.slide_select[name="slide_check4"]:nth-of-type(4):checked ~ .move_controler .button_move:nth-of-type(4) {
-  opacity: 1;
-}
-
-/* 3番目のスライドが選択された時の表示 */
-.slide_select[name="slide_check4"]:nth-of-type(3):checked ~ .slide:nth-of-type(3) {
-  opacity: 1;
-}
-
-/* 4番目のスライドが選択された時の表示 */
-.slide_select[name="slide_check4"]:nth-of-type(4):checked ~ .slide:nth-of-type(4) {
-  opacity: 1;
 }
 
 /* スキル紹介の画像挿入 */
@@ -947,15 +713,6 @@ input[type="checkbox"] {
     height: 240px;
   }
 
-  /* スライド移動ボタンエリア */
-  .move_controler {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    margin-bottom: 150px;
-    text-align: center;
-    }
-
   #title1 {
     font-size: 30px;
   }
@@ -993,15 +750,6 @@ input[type="checkbox"] {
     height: 320px;
   }
 
-  /* スライド移動ボタンエリア */
-.move_controler {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  margin-bottom: 70px;
-  margin-left: 160px;
-  }
-
   .popup-grid {
     grid-template-columns: repeat(3, 1fr); /* 3列のグリッド */
   }
@@ -1033,14 +781,6 @@ input[type="checkbox"] {
   #sample_pictures{
     width: 500px;
     height: 400px;
-  }
-
-  /* スライド移動ボタンエリア */
-.move_controler {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  margin-left: 200px;
   }
 
   .popup-grid {
@@ -1076,14 +816,6 @@ input[type="checkbox"] {
     height: 400px;
   }
 
-  /* スライド移動ボタンエリア */
-  .move_controler {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
-    }
-
   .popup-grid {
     grid-template-columns: repeat(4, 1fr); /* 3列のグリッド */
   }
@@ -1116,14 +848,6 @@ input[type="checkbox"] {
   #sample_pictures{
     width: 500px;
     height: 400px;
-  }
-
-  /* スライド移動ボタンエリア */
-.move_controler {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
   }
 
   .popup-grid {
