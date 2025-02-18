@@ -63,3 +63,49 @@ window.onscroll = function(){
     }
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  // 各スライダーコンテナに対してスライダー機能を初期化
+  document.querySelectorAll('.slider-container').forEach(container => {
+      const wrapper = container.querySelector('.slider-wrapper');
+      const images = wrapper.querySelectorAll('.slider-image');
+      const prevButton = container.querySelector('.prev');
+      const nextButton = container.querySelector('.next');
+      const dotsContainer = container.querySelector('.slider-dots');
+      
+      let currentIndex = 0;
+
+      // ドットを生成
+      images.forEach((_, index) => {
+          const dot = document.createElement('div');
+          dot.classList.add('dot');
+          if (index === 0) dot.classList.add('active');
+          dot.addEventListener('click', () => goToSlide(index));
+          dotsContainer.appendChild(dot);
+      });
+
+      const dots = dotsContainer.querySelectorAll('.dot');
+
+      function updateDots() {
+          dots.forEach((dot, index) => {
+              dot.classList.toggle('active', index === currentIndex);
+          });
+      }
+
+      function goToSlide(index) {
+          currentIndex = index;
+          wrapper.style.transform = `translateX(-${index * 100}%)`;
+          updateDots();
+      }
+
+      prevButton.addEventListener('click', () => {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          goToSlide(currentIndex);
+      });
+
+      nextButton.addEventListener('click', () => {
+          currentIndex = (currentIndex + 1) % images.length;
+          goToSlide(currentIndex);
+      });
+  });
+});
