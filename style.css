@@ -1,6 +1,6 @@
 body {
   /* background-color:#161A30; */
-  background: linear-gradient(-20deg, #639ce8 0%, #24d292 100%);
+  background: linear-gradient(-20deg, #330867 0%, #30cfd0 100%);
   color: #F0ECE5;
   font-family: "Oswald","BIZ UDPGothic", sans-serif;
   font-weight: 400;
@@ -176,7 +176,7 @@ header {
 /* フッターの設定 */
 .footer {
   /* background-color: #31304D; */
-  background-color: #a4d0f4f0;
+  background-color: #30cfd0;
   width: 100%;
   text-align: left;
   font-family: sans-serif;
