@@ -2,9 +2,8 @@ body {
   /* background-color:#161A30; */
   background: linear-gradient(-20deg, #639ce8 0%, #24d292 100%);
   color: #F0ECE5;
-  font-weight: normal;
-  font-family: "M PLUS 1", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Kosugi", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
