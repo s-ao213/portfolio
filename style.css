@@ -2,9 +2,10 @@ body {
   /* background-color:#161A30; */
   background: linear-gradient(-20deg, #639ce8 0%, #24d292 100%);
   color: #F0ECE5;
-  font-family: "Kosugi", sans-serif;
+  font-family: "Oswald","BIZ UDPGothic", sans-serif;
   font-weight: 400;
   font-style: normal;
+  line-height: 1.5em;
 }
 
 .little_title{
